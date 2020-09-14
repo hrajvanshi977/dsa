@@ -39,7 +39,7 @@ public class Solution {
 		}
 		static void minHeapify(int position) {
 			
-			if(isLeaf(position)) {
+			if(!isLeaf(position)) {
 				if(heap[position]  > heap[leftChild(position)] || heap[position] > heap[rightChild(position)]) {
 					
 					if(heap[leftChild(position)] < heap[rightChild(position)]) {
